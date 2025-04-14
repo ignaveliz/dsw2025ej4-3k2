@@ -65,7 +65,7 @@ public class MenuPrincipalView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_AgrAnimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_AgrAnimActionPerformed
-    
+        Controlador.AgregarAnimalView();
     }//GEN-LAST:event_btn_AgrAnimActionPerformed
 
     private void btn_listarAnimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_listarAnimActionPerformed

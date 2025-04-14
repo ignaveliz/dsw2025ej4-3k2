@@ -17,7 +17,11 @@ public class Controlador {
     public static ArrayList<Sector> getSectores(){
         return Persistencia.getSectores();
     }
-     
+    
+    public static ArrayList<Pais> getPaises(){
+        return Persistencia.getPaises();
+    }
+    
     public static ArrayList<AnimalViewModel> getAnimales(){
         ArrayList<AnimalViewModel> animales = new ArrayList<>();
         for(Mamifero animal : Persistencia.getAnimales()){
@@ -36,5 +40,13 @@ public class Controlador {
         ListarAnimalesView view = new ListarAnimalesView();
         view.setVisible(true);
     }
-
+    
+    public static void AgregarAnimalView(){
+        AgregarAnimalView view = new AgregarAnimalView();
+        view.setVisible(true);
+    }
+    
+    public static void guardarAnimales(Mamifero animal){
+        Persistencia.cargarAnimales(animal);
+    }
 }
